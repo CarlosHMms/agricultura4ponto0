@@ -1,0 +1,79 @@
+<html>
+<head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+    <script>
+
+
+        google.charts.load('current', {'packages':['corechart']});
+
+        function desenharPizza (){
+
+            var tabela = new google.visualization.DataTable();
+            tabela.addColumn('string','categorias');
+            tabela.addColumn('number','valores');
+            tabela.addRows([
+
+                ['Educação',2000],
+                ['Transporte',500],
+                ['Lazer',230],
+                ['Saúde',50],
+                ['Cartão de crédito',900],
+                ['Alimentação',260]
+            ]);
+
+            var grafico = new google.visualization.PieChart(document.getElementById('graficoPizza'));
+            grafico.draw(tabela);
+    }
+
+    google.charts.setOnLoadCallback(desenharPizza);
+
+    //grafico de linha
+    tabela1 = new google.visualization.DataTable();
+
+    tabela1.addColumn('string','mes');
+    tabela1.addColumn('number','gastos');
+
+        tabela1.addRows([
+            ['jan',800],
+            ['fev',100],
+            ['mar',200],
+            ['abr',300],
+            ['mai',400],
+            ['jun',500],
+            ['jul',600],
+            ['ago',700],
+            ['set',500],
+            ['out',900],
+            ['nov',200],
+            ['dez',700]
+
+        ]);
+
+        var opcoes = {
+            'title': 'Gastos por mes',
+            'width': 650,
+            'heigth': 300,
+            'vAxis':
+                {
+                format: 'currency',
+                gridlines: {
+                            count:5,
+                            color: 'red'
+                            }
+                },
+                curveType: 'function',
+                legend: 'none'
+        }
+    var grafico = new google.visualization.LineChart(document.getElementById('graficolinha'));
+    grafico.draw(tabela1, opcoes);
+
+
+
+    </script>
+</head>
+<body>
+    <div id="graficoPizza"></div><br><br><br><br>
+    <div id="graficolinha"></div>
+</body>
+</html>

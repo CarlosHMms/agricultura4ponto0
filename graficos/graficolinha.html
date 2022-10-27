@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Ano', 'Sensor 1', 'Sensor 2', 'Sensor 3', 'Sensor 4'],
+          ['20/04',  1000,      400,      500,      600],
+          ['20/05',  1170,      760,      600,      500],
+          ['20/06',  660,       1120,      400,      500],
+          ['20/07',  660,       120,      300,      800],
+          ['20/08',  660,       1120,      3050,      8060],
+          ['20/10',  660,       1120,      3800,      8070],
+          ['20/11',  660,       11240,      3090,      800],
+          ['20/12',  660,       11250,      3600,      8020],
+          ['21/01',  660,       1120,      300,      8070],
+          ['21/02',  1030,      5430,      3200,      7050]
+        ]);
+
+        var options = {
+          title: 'Company Performance',
+          curveType: 'function',
+          legend: { position: 'bottom' }
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+        chart.draw(data, options);
+      }
+      
+    </script>
+  </head>
+  <body>
+    <div id="curve_chart" style="width: 900px; height: 500px"></div>
+  </body>
+</html>

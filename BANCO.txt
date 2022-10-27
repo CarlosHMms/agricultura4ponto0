@@ -1,0 +1,51 @@
+CREATE DATABASE irrigacao;
+USE irrigacao;
+CREATE TABLE central(
+id_central INT NOT NULL AUTO_INCREMENT,
+nome VARCHAR(45) NOT NULL,
+PRIMARY KEY (id_central)
+);
+
+CREATE TABLE sensores(
+id INT NOT NULL AUTO_INCREMENT,
+sensor1 INT,
+sensor2 INT,
+sensor3 INT,
+sensor4 INT,
+temperatura INT,
+umidade INT,
+DT datetime,
+status1 VARCHAR(45), 
+status2 VARCHAR(45),
+status3 VARCHAR(45),
+status4 VARCHAR(45),
+central_id int not null,
+PRIMARY KEY (id),
+FOREIGN KEY(central_id) REFERENCES central(id_central) 
+);
+
+-- DROP DATABASE irrigacao;
+
+-- -------------INSERTS-------------------
+INSERT INTO central (id_central, nome) VALUES(NULL,"CENTRAL 2");
+INSERT INTO sensores VALUES(NULL,234,523,552,212,32,55,NOW(),"irrigado","irrigado","irrigado","irrigado",1);
+
+-- -------------SELECTS-------------------
+SELECT nome FROM central c
+INNER JOIN sensores s
+ON s.central_id = c.id_central
+where s.id = 1;
+
+select * from central;
+SELECT s.id, s.sensor1, s.sensor2, s.sensor3, s.sensor4, s.temperatura, s.umidade, s.status1, s.status2, s.status3, 
+s.status4, DATE_FORMAT(s.DT,"%d") as dia, DATE_FORMAT(s.DT,"%m") as mes, DATE_FORMAT(s.DT,"%y") as ano, 
+DATE_FORMAT(s.DT,"%H") as hora, DATE_FORMAT(s.DT,"%i") as minuto ,c.nome 
+FROM sensores s INNER JOIN central c  on s.central_id = c.id_central 
+where c.id_central =1 AND DATE_FORMAT(s.DT,"%y-%m-%d") > "22-09-21";
+
+SELECT s.id, s.sensor1, s.sensor2, s.sensor3, s.sensor4, s.temperatura, s.umidade, s.status1, s.status2, s.status3, 
+s.status4, DATE_FORMAT(s.DT,"%d") as dia, DATE_FORMAT(s.DT,"%m") as mes, DATE_FORMAT(s.DT,"%y") as ano, 
+DATE_FORMAT(s.DT,"%H") as hora, DATE_FORMAT(s.DT,"%i") as minuto ,c.nome 
+FROM sensores s 
+INNER JOIN central c  on s.central_id = c.id_central 
+where c.id_central =1 AND s.DT="2022-09-22 16:53:43";
