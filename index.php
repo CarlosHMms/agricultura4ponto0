@@ -16,14 +16,15 @@
     <!-- <link rel="stylesheet" type="text/css" href="css/estilo.css" /> -->
 
     <style>
-
         <---- 
         .tabela{ 
             text-align: left;
         }
+
 		table,th, td {
             border: 1px solid;
         }
+
         .tabela {
 	        display: inline-block;
 	        padding: 30px 15px 20px 15px;
@@ -70,14 +71,11 @@
           background-color: #45a049;
         }
 
-
         #div_central{
         	width: 1000px;
  			margin: 0 auto;
 
         }
-
-
 
         i{
         	padding: 0px 0px 0px 50px;
@@ -89,7 +87,7 @@
         }
 
         ---->
-        
+
         .header{
                 
             background-color: rgba(74, 214, 43, 0.822);
@@ -102,14 +100,13 @@
             height:8%;    
 
         }
+
         .titleHeader{
             position: absolute;
             margin-top: -7% ;
             margin-left: 44%;    
             text-align: center ;    
         }
-
-
 
         .content{
         
@@ -118,6 +115,7 @@
             margin-left: 40%;  
 
         }
+
         .titulo{
         
             height: 30% ;
@@ -126,17 +124,19 @@
         .teste{
             color: rgb(89, 0, 255);
         }
+
         .navbar-border-inf{
             position: absolute;
             margin-left: 1100px;
             margin-top: 40px;
         }
+
         .navbar-border-temp{
             position: absolute;
             margin-left: 150px;
             margin-top: 40px;
         }
-
+        
         .navbar-border-solo{
             position: absolute;
             margin-left: 450px;
@@ -175,7 +175,6 @@
             margin-top: 70px;
             color:azure;
         }
-
 
     </style>  
 
