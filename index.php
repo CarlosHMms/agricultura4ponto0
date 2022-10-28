@@ -24,36 +24,16 @@
     <?php
         include 'conexao.php';
     ?>
-    <!-- Navbar Bootstrap -->
-    <nav class="fixed-top " style="background-color:rgb(141, 209, 39); id=">
-        <div class="container.py">
-            <a href="" class="navbar-brand">
-            <img src="LogoIF.png" alt="" class="logoif">                    
-            <span>Agricultura 4.0</span>
-            </a>
-             <!-- BTN Informações -->
-          <!--  <button type="button" class="btn btn-success navbar-border navbar-border-inf">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"></path></svg>
-                Informações
-            </button> -->
-
-            <!-- BTN Social -->
-
-            <i class="bi bi-instagram navbar-border-insta"></i>
-            <i class="bi bi-facebook navbar-border-face"></i>
-            <i class="bi bi-whatsapp navbar-border-wpp"></i>
-        </div>
-    </nav>    
+    <!-- Nova Navbar -->
     
-    <!-- Fim Navbar Bootstrap -->
+    <!-- Fim da Nova Navbar -->
     <script src="js/scripts.js"></script>
 
     <br>
     <br>
     <br>
     <br>
-    
+
     	<div id="div_central">
     		<center>
 			    <?php
