@@ -98,7 +98,7 @@
         }
 
         .logoif{
-            width: 80%;
+            width: 8%;
             height:8%;    
 
         }
