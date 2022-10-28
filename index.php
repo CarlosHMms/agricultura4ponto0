@@ -71,14 +71,6 @@
         }
 
 
-
-
-
-
-
-
-
-
         #div_central{
         	width: 1000px;
  			margin: 0 auto;
@@ -96,11 +88,7 @@
         	border: 1px solid;	
         }
 
-
         ---->
-
-
-
         
         .header{
                 
