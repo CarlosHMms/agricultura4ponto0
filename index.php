@@ -44,7 +44,7 @@
         }
 
         .tabela tr:hover {
-            background-color: #ddd;
+            background-color: #fff;
         }
 
         .tabela th {
