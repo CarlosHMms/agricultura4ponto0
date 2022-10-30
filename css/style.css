@@ -6,10 +6,11 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: #544bcf;
+    background-color: #04AA6D;
 }
 .navp{
-    margin-top: 30px;
+    margin-top: 4%;
+    margin-left: auto;
 }
 .navLi{
     font-family: "Montserrat", sans-serif;
@@ -27,19 +28,17 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    padding: 20px 25%;
+    padding: 20px 20%;
 }
 .logo{
     cursor: pointer;
-    width: 450px;
-    height: 98px;
-    margin-left: 50px;
-    margin-right: 580px;
+    margin-left: 2%;
+    width: 40%;
+    height: 40%;
     margin-bottom: 10px;
 }
 .navUnlist{
     list-style: none;
-    margin-left: 100px;
 
 }
 .navUnlist li{
@@ -57,24 +56,28 @@ header {
 }
 /*Fim NavBar*/
 
+/* Tabela */
+
 table, th, td {
     border: 1px solid;
 }
 
 .tabela {
     display: inline-block;
-    padding: 60px 30px 40px 30px;
+    padding: 4% 3% 4% 3%;
     margin-right: 0vw;
     text-align: center;
     border-radius: 30px;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
+    font-size: 22px;
     border-collapse: collapse;
+    border-color: #04AA6D;
+    color: #02955f;
 }
 
 .tabela td,
 .tabela th {
-    border: 1px solid #ddd;
+    border: 1px solid rgb(221, 221, 221);
     padding: 10px;
 }
 
@@ -84,7 +87,7 @@ table, th, td {
 }
 
 .tabela tr:hover {
-    background-color: rgba(174, 173, 238, 0.589);
+    background-color: rgba(136, 184, 127, 0.395);
     transition: all 0.5s ease;
 }
 
@@ -93,7 +96,7 @@ table, th, td {
     padding-bottom: 12px;
     text-align: left;
     background-color: #04AA6D;
-    color: white;
+    color: rgba(255, 255, 255, 0.997);
 }
 
 button[type=submit] {
@@ -120,3 +123,4 @@ button[type=submit]:hover {
     margin-left: 100px;
 
 }
+/*Fim da tabela

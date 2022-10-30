@@ -28,7 +28,7 @@
 
     <!-- Nova Navbar -->
     <header class="navbar">
-        <a href="index.php"><img class="logo" src="imagens/logotipo.png" alt="Instituto Ferderal Goiano - Campus Ceres"></a>
+        <a class="logolink" href="index.php"><img class="logo" src="imagens/logotipo2.png" alt="Instituto Ferderal Goiano - Campus Ceres"></a>
         <nav class="navp">
             <ul class="navUnlist">
                 <li class="navLi"><a href="#"><img class="navA" src="imagens/facelogo.png"></a></li>
@@ -42,7 +42,7 @@
 
     <script src="js/scripts.js"></script>
 
-    <br><br><br>
+    <br><br>
 
     <div id="div_central">
         
