@@ -86,9 +86,10 @@ table, th, td {
     transition: all 0.5s ease;
 }
 
-.tabela tr:hover {
+.tabela .tdval:hover {
     background-color: rgba(136, 184, 127, 0.395);
     transition: all 0.5s ease;
+    cursor: pointer;
 }
 
 .tabela th {
