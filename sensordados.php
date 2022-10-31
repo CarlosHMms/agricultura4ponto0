@@ -49,28 +49,17 @@
 	?>
 	<!--Inicio do Painel -->
 	<div class="bg"></div>
-	<div class="conteiner1">
-		<div class="widgetsens">
-			<div class="top">
-				<h3>Sensor 1</h3>
-			</div>
-		</div>
-	</div>
 	<div class="conteiner">
 		<div class="widget">
 			<div class="left">
-				<h3 class="titulot">Temperatura</h3>
-				<img class="temp-icon" src="imagens/term.png" alt="">
-				<h5 class="temp-status"><?php echo $dtemperatura ?> C°</h5>
+				<h3 class="titulot">Sensor 1</h3>
 			</div>
 			<div class="right">
-				<h3 class="titulou">Umidade do ar</h3>
 				<img class="umi-icon" src="imagens/umi.png" alt="">
-				<h5 class="umi-status"><?php echo $dumidade ?> %</h5>
 			</div>
-			<div class="bottom">
+			<div class="bottom">				
 				<div>
-					<h5 style="font-size: 0.83em;">Umidade do solo</h5><span><?php echo $dsensor1 ?></span>
+					<h5><?php echo $dsensor1 ?></h5>
 				</div>
 			</div>
 		</div>
