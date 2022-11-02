@@ -2,54 +2,72 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
+body {
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: "Montserrat", sans-serif;
+}
+
 .navbar {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     background-color: #04AA6D;
+    width: -40px;
 }
-.navp{
-    margin-top: 4%;
-    margin-left: auto;
+
+.navp {
+    width: 366px;
+    height: 52px;
+    margin-bottom: 0;
+    margin-top: 5vh;
 }
-.navLi{
+
+.navLi {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-size: 16px;
     color: whitesmoke;
     text-decoration: none;
 }
-.navA{
+
+.navA {
     width: 40px;
-    height: 40px;
+    height: 38px;
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    padding: 20px 20%;
 }
-.logo{
+
+.logo {
     cursor: pointer;
     margin-left: 2%;
     width: 40%;
     height: 40%;
-    margin-bottom: 10px;
+    margin-bottom: 3vh;
 }
-.navUnlist{
+
+.navUnlist {
     list-style: none;
 
 }
-.navUnlist li{
+
+.navUnlist li {
     display: inline-block;
-    padding: 0px 20px;
+    padding: 0px 15px;
 
 }
 
 .navUnlist li a {
     transition: all 0.3s ease;
 }
+
 .navUnlist li a :hover {
     transition: all 0.5s ease;
     border-radius: 18px;

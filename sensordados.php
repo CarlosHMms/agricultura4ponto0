@@ -47,25 +47,97 @@
 		$dumidade = $linha['umidade'];
 	}
 	?>
-	<!--Inicio do Painel -->
-	<div class="bg"></div>
-	<div class="conteiner">
-		<div class="widget">
-			<div class="left">
-				<h3 class="titulot">Sensor 1</h3>
+	<div class="bg">
+		<!--Inicio do Painel 1-->
+		<div class="conteiner">
+			<div class="widget">
+				<div class="left">
+					<h3 class="titulot">Sensor 1</h3>
+				</div>
+				<div class="right">
+					<img class="solo-icon" src="imagens/senssolo.png" alt="">
+				</div>
+				<div class="bottom">
+					<div class="motion">
+						<h5><?php echo $dsensor1 ?></h5>
+					</div>
+				</div>
 			</div>
-			<div class="right">
-				<img class="umi-icon" src="imagens/umi.png" alt="">
+		</div>
+		<!--Final do Painel 2-->
+		<!--Inicio Painel 2-->
+		<div class="conteiner2">
+			<div class="widget">
+				<div class="left">
+					<h3 class="titulot">Sensor 2</h3>
+				</div>
+				<div class="right">
+					<img class="solo-icon" src="imagens/senssolo.png" alt="">
+				</div>
+				<div class="bottom">
+					<div class="motion">
+						<h5><?php echo $dsensor2 ?></h5>
+					</div>
+				</div>
 			</div>
-			<div class="bottom">				
-				<div>
-					<h5><?php echo $dsensor1 ?></h5>
+		</div>
+		<!--Final do Painel 2-->
+		<!--Inicio Painel 3-->
+		<div class="conteiner3">
+			<div class="widget">
+				<div class="left">
+					<h3 class="titulot">Sensor 3</h3>
+				</div>
+				<div class="right">
+					<img class="solo-icon" src="imagens/senssolo.png" alt="">
+				</div>
+				<div class="bottom">
+					<div class="motion">
+						<h5><?php echo $dsensor3 ?></h5>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--Final do Painel 3-->
+		<!--Inicio Painel 4-->
+		<div class="conteiner4">
+			<div class="widget">
+				<div class="left">
+					<h3 class="titulot">Sensor 4</h3>
+				</div>
+				<div class="right">
+					<img class="solo-icon" src="imagens/senssolo.png" alt="">
+				</div>
+				<div class="bottom">
+					<div class="motion">
+						<h5><?php echo $dsensor4 ?></h5>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--Final do Painel 4-->
+	</div>
+	<!--Painel Climatico -->
+
+	<div class="bg2">
+		<div class="conteinerClima">
+			<div class="widgetClima">
+				<div class="leftClima">
+					<h3></h3>
+				</div>
+				<div class="rigthClima">
+					<img src="" alt="">
+				</div>
+				<div class="bottomClima">
+					<div>
+						<span></span>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 
-	<!--Final do Painel -->
+	<!--Fim do Painel Climatico-->
 
 	<script type="text/javascript">
 		google.charts.load('current', {

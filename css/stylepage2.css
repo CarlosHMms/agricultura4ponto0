@@ -9,19 +9,21 @@ body{
     align-items: center;
     min-height: 100vh;
     font-family: "Montserrat", sans-serif;
+    overflow: scroll;
 }
 .navbar {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     background-color: #04AA6D;
+    width: -40px;
 }
-
-.navp {
-    margin-top: 4%;
-    margin-left: auto;
+.navp{
+    width: 366px;
+    height: 52px;
+    margin-bottom: 0;
+    margin-top: 5vh;
 }
-
 .navLi {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
@@ -39,7 +41,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    padding: 20px 20%;
 }
 
 .logo {
@@ -47,7 +48,7 @@ header {
     margin-left: 2%;
     width: 40%;
     height: 40%;
-    margin-bottom: 10px;
+    margin-bottom: 4vh;
 }
 
 .navUnlist {
@@ -57,7 +58,7 @@ header {
 
 .navUnlist li {
     display: inline-block;
-    padding: 0px 20px;
+    padding: 0px 15px;
 
 }
 
@@ -71,12 +72,6 @@ header {
 }
 
 /*Fim Navbar*/
-
-#backgrd{
-    background-color: blue;
-    background-image: none;
-
-}
 
 .tabela {
     display: inline-block;
@@ -112,31 +107,60 @@ header {
     color: white;
 }
 
-.ul-painel{
-    list-style:none ;
-}
 
-/* Painel 1 */
+
+/* Painel sensor 1 */
 
 .bg{
-    margin-top: 4%;
-    background-color: rgb(109, 165, 201);
-    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 2vh;
+    margin-top: 2vh;
+    margin-right: 2vh;
+    background-color: rgb(78, 143, 184);
+    min-width: 98%;
     height: 280px;
+    border-radius: 30px;
+
 }
 .conteiner{
-    top: 28%;
-    left: 2%;
+    top: 6.5vh;
+    left: 10px;
     position: absolute;
-    display: flex;
+    display: inline-block;
+}
+.conteiner2 {
+    top: 6.5vh;
+    left: 51.5vh;
+    position: absolute;
+    display: inline-block;
+    padding-left: 1vh;
+}
+.conteiner3 {
+    top: 6.5vh;
+    left: 103vh;
+    position: absolute;
+    display: inline-block;
+    padding-left: 1vh;
+}
+.conteiner4 {
+    top: 6.5vh;
+    left: 154.5vh;
+    position: absolute;
+    display: inline-block;
 }
 .widget{
     width: 350px;
     height: 150px;
     border-radius: 20px;
     background: rgba(299, 299, 299, 0.4);
+    transition: all 0.3s ease;
 }
-
+.widget:hover{
+    box-shadow: -1px 1px 30px -10px #000000;
+    transition: all 0.3 ease;
+}
 .widget .left{
     top: 10px;
     position: absolute;
@@ -145,41 +169,51 @@ header {
 }
 .widget .right {
     top: 10px;
-    position: absolute;
-    right: 10px;
+    position: relative;
+    left: 150px;
     width: 200px;
 }
-
-.umi-icon {
-    width: 30%;
+.widget .bottom{
+    bottom: 10px;
+    margin-left: 63%;
+    position: absolute;
+}
+.solo-icon {
+    width: 50%;
     margin-bottom: 0;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    transition: all 0.3s ease;
 }
-
+.widget:hover .solo-icon{
+    margin-top: -5px;
+}
 .titulot{
-    margin-top: 25px;
+    margin-top: 4vh;
     text-align: center;
-    transition: 0.3s;
-}
-.titulou{
-    margin-top: 25px;
-    text-align: center;
-}
-.widget .bottom{
-    width: 100%;
-    position: absolute;
-    bottom: 10px;
-
-}
-.widget .bottom div{
-    margin: 5px 10px 5px;
-    text-align: center;
-    line-height: 100%;
+    font-size: 1.8em;
+    cursor: default;
+    color: rgb(49, 49, 49);
 }
 .widget .bottom div h5 {
     font-size: 2em;
+    cursor: default;
     color: #fff;
 }
-/*titulo painel 1*/
+
+/*Fim Painel Sensor 2*/
+
+/*Painel Clima*/
+.bg2{
+    background-color: rgb(78, 143, 184);
+    position: relative;
+    margin-left: 50vh;
+    margin-right: 4vh;
+    margin-top: 4vh;
+    background-color: rgb(78, 143, 184);
+    min-width: 50%;
+    width: 50%;
+    height: 180px;
+    border-radius: 30px;
+}
