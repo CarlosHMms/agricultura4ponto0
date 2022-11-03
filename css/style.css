@@ -15,13 +15,13 @@ body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: #04AA6D;
+    background-color: rgb(7, 216, 0);   
     width: -40px;
 }
 
 .navp {
     width: 366px;
-    height: 52px;
+    height: 65px;
     margin-bottom: 0;
     margin-top: 5vh;
 }
@@ -50,7 +50,7 @@ header {
     margin-left: 2%;
     width: 40%;
     height: 40%;
-    margin-bottom: 3vh;
+    margin-bottom: 4vh;
 }
 
 .navUnlist {
@@ -89,8 +89,8 @@ table, th, td {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 22px;
     border-collapse: collapse;
-    border-color: #04AA6D;
-    color: #02955f;
+    border-color: rgb(7, 216, 0);
+    color: rgb(0, 0, 0);
 }
 
 .tabela td,
@@ -105,7 +105,7 @@ table, th, td {
 }
 
 .tabela .tdval:hover {
-    background-color: rgba(136, 184, 127, 0.395);
+    background-color: rgba(38, 255, 0, 0.395);
     transition: all 0.5s ease;
     cursor: pointer;
 }
@@ -114,13 +114,13 @@ table, th, td {
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: left;
-    background-color: #04AA6D;
+    background-color: rgb(0, 0, 0);
     color: rgba(255, 255, 255, 0.997);
 }
 
 button[type=submit] {
     width: 100%;
-    background-color: #4CAF50;
+    background-color: rgb(7, 216, 0);
     color: white;
     padding: 25px 50px;
     margin: 8px 0;
@@ -131,7 +131,7 @@ button[type=submit] {
 }
 
 button[type=submit]:hover {
-    background-color: #45a049;
+    background-color: rgb(7, 202, 0);
     border-radius: 20px;
     transition: all 0.3s ease;
 }
