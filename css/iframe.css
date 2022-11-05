@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+body{
+    overflow: hidden;
+    font-family: "Montserrat", sans-serif;
+}
+
+.conteiner{
+    width: 140px;
+    margin: 0 0;
+    padding-top: 2%;
+    display: inline-block;
+}
+.englobe{
+    margin-left: 15%;
+}
+.switch{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.switch .switch-text{
+    padding-right: 0.3rem;
+    font-size: 1.1em;
+}
+.switch .switch-wrapper{
+    display: inline-block;
+    width: 55px;
+    height: 25px;
+    position: relative;
+}
+.switch .switch-wrapper .switch-button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 40px;
+    background-color: rgb(112, 112, 112);
+}
+.switch .switch-wrapper input{
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.switch .switch-wrapper .switch-button::before{
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 4px;
+    bottom: 4px;
+    border-radius: 50%;
+    transition: .4s all ease;
+    background-color: whitesmoke;
+}
+
+.switch .switch-wrapper input:checked + .switch-button{
+    background-color: #58a721;
+}
+.switch .switch-wrapper input:checked + .switch-button::before {
+    transform: translateX(21px);
+}
+.datas{
+    margin-left: 22%;
+}
+
+input[type="date"]{
+    background-color: whitesmoke;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 1em;
+}
+input[type="submit"]{
+    background-color: rgb(209, 209, 209);
+    margin-top: 15px;
+    border-radius: 5px;
+    padding: 8px;
+    border: 1px;
+    margin-left: 10px;
+    transition: .4s all ease;
+}
+input[type="submit"]:hover{
+    background-color:rgb(209, 209, 209);
+
+}

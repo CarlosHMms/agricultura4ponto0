@@ -270,12 +270,11 @@ header {
     transition: all 0.3 ease;
 }
 /*Gráficos*/
-#graficosensor{
+
+iframe{
     display: inline-block;
-}
-#graficosensor2{
-    display: block;
-}
-form{
-    float: right;
+    width: 50%;
+    height: 650px;
+    padding-top: 40px;
+    margin-left: 25%;
 }
