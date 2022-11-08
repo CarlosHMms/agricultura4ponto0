@@ -14,10 +14,6 @@
 
 <header class="navbar">
 	<a class="logolink" href="index.php"><img class="logo" src="imagens/logotipo2.png" alt="Instituto Ferderal Goiano - Campus Ceres"></a>
-	<nav class="navp">
-		<ul class="navUnlist">
-		</ul>
-	</nav>
 </header>
 
 <body>
