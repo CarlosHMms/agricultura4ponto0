@@ -278,3 +278,9 @@ iframe{
     padding-top: 40px;
     margin-left: 25%;
 }
+
+/* Responsividade */
+
+@media (min-width:1360px) and (max-height: 768px) {
+    
+}

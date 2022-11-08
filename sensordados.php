@@ -45,6 +45,7 @@
 	?>
 	<div class="bg">
 		<!--Inicio do Painel 1-->
+		<div class="re-order">
 		<div class="conteiner">
 			<div class="widget">
 				<div class="left">
@@ -142,6 +143,7 @@
 				</div>
 			</div>
 		</div>
+	</div>
 	</div>
 
 	<!--Fim do Painel Climatico-->
