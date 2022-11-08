@@ -281,7 +281,7 @@ iframe{
 
 /* Responsividade */
 
-@media (min-width:1360px) and (max-height: 768px) {
+@media (max-width: 450px) {
         .widget {
             width: 250px;
             height: 100px;
@@ -318,4 +318,17 @@ iframe{
             position: absolute;
             display: inline-block;
         }
-}
+        .titulot {
+            margin-top: 4vh;
+            text-align: center;
+            font-size: 0.4em;
+            cursor: default;
+            color: rgb(49, 49, 49);
+        }
+
+        .widget .bottom div h5 {
+            font-size: 1em;
+            cursor: default;
+            color: #fff;
+        }
+    }
