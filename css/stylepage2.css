@@ -289,7 +289,6 @@ iframe{
         margin-top: 3vh;
         margin-right: 2vh;
         background-color: rgb(7, 216, 0);
-        min-width: 90%;
         height: 280px;
         border-radius: 30px;
     
@@ -363,5 +362,69 @@ iframe{
         cursor: default;
         color: #fff;
     }
-    
+    /* Responsividade Climaticos */
+    .bg2{
+        background-color: rgb(7, 216, 0);
+        position: relative;
+        margin-left: 13%;
+        margin-right: 4vh;
+        margin-top: 4vh;
+        min-width: 50%;
+        width: 75%;
+        height: 115px;
+        border-radius: 30px;
+    }
+    .conteinerClima{
+        position: absolute;
+        display: inline-block;
+        background-color: rgba(299, 299, 299, 0.4);
+        margin-left: 235px;
+        margin-top: 10px;
+        border-radius: 20px;
+        transition: all 0.3s ease;
+        cursor: default;
+    }
+    .conteinerUmi{
+        background-color: rgba(299, 299, 299, 0.4);
+        position: absolute;
+        display: inline-block;
+        margin-left: 785px;
+        margin-top: 10px;
+        border-radius: 20px;
+        transition: all 0.3s ease;
+        cursor: default;
+    }
+    .widgetClima{
+        position: relative;
+        width: 350px;
+        height: 95px;
+    }
+    .leftClima{
+        position: absolute;
+        margin-left: 5%;
+        margin-top: 6%;
+    }
+    .rightClima{
+        position: absolute;
+        left: 58%;
+        margin-top: 4%;
+    }
+    .logoClima{
+        margin-bottom: 3%;
+        width: 30%;
+        height: 30%;
+    }
+     span{
+        margin-top: 10%;
+        margin-left: 5%;
+        font-size: 1.8em;
+     }
+    .conteinerClima:hover {
+        box-shadow: -1px 1px 30px -10px #000000;
+        transition: all 0.3 ease;
+    }
+    .conteinerUmi:hover {
+        box-shadow: -1px 1px 30px -10px #000000;
+        transition: all 0.3 ease;
+    }
     }
