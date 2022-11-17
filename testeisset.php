@@ -10,6 +10,7 @@
 <body>
   <link rel="stylesheet" href="css/iframe.css">
   <!-- Gráfico -->
+  <!--Mudar action para local do banco de dados-->
   <form action="http://localhost/Agricultura4ponto0/testeisset.php" method="GET">
     <div class="datas">
       <label>
@@ -59,7 +60,6 @@
         </label>
       </div>
     </div>
-
   </form>
 
   <?php
@@ -226,14 +226,7 @@
     }
   </script>
 
-
-
-
-
-
-
-
-  <div id="graficosensor" style="width: 900px; height: 500px"></div>
+  <div id="graficosensor" style="width: 300vh; height: 500px;"></div>
 
 </body>
 

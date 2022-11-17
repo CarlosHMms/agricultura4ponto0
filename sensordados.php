@@ -42,6 +42,10 @@
 		$dumidade = $linha['umidade'];
 	}
 	?>
+	<script src="js/scripts.js" defer></script>
+	<script>
+
+	</script>
 	<div class="bg">
 		<!--Inicio do Painel 1-->
 		<div class="conteiner">

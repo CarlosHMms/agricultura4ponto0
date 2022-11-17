@@ -119,7 +119,6 @@ header {
     margin-top: 3vh;
     margin-right: 2vh;
     background-color: rgb(7, 216, 0);
-    min-width: 98%;
     height: 280px;
     border-radius: 30px;
 
@@ -135,14 +134,12 @@ header {
     left: 51.5vh;
     position: absolute;
     display: inline-block;
-    padding-left: 1vh;
 }
 .conteiner3 {
     top: 6.5vh;
     left: 103vh;
     position: absolute;
     display: inline-block;
-    padding-left: 1vh;
 }
 .conteiner4 {
     top: 6.5vh;
@@ -210,7 +207,6 @@ header {
     margin-left: 13%;
     margin-right: 4vh;
     margin-top: 4vh;
-    min-width: 50%;
     width: 75%;
     height: 115px;
     border-radius: 30px;
@@ -272,10 +268,10 @@ header {
 
 iframe{
     display: inline-block;
-    width: 50%;
-    height: 650px;
+    width: 200vh;
+    height: 705px;
     padding-top: 40px;
-    margin-left: 25%;
+    margin-left: -2.5%;
 }
 
 /* Responsividade */
@@ -290,27 +286,27 @@ iframe{
         margin-right: 1vh;
         background-color: rgb(7, 216, 0);
         border-radius: 30px;
+        width: 318px;
     
     }
     .conteiner{
         /*Alterar para deixar responsivo*/top: 2.5vh;
-        /*Alterar para deixar responsivo*/left: 12px;
+        /*Alterar para deixar responsivo*/left: 22px;
         position: absolute;
     }
     .conteiner2 {
         /*Alterar para deixar responsivo*/top: 2.5vh;
-        /*Alterar para deixar responsivo*/left: 140px;
+        /*Alterar para deixar responsivo*/left: 175px;
         position: absolute;
-        padding-left: 1vh;
     }
     .conteiner3 {
-        /*Alterar para deixar responsivo*/top: 15vh;
-        /*Alterar para deixar responsivo*/left: 5px;
+        /*Alterar para deixar responsivo*/top: 12vh;
+        /*Alterar para deixar responsivo*/left: 22px;
         position: absolute;
     }
     .conteiner4 {
-        /*Alterar para deixar responsivo*/top: 15vh;
-        /*Alterar para deixar responsivo*/left: 150px;
+        /*Alterar para deixar responsivo*/top: 12vh;
+        /*Alterar para deixar responsivo*/left: 175px;
         position: absolute;
 
     }
@@ -363,9 +359,8 @@ iframe{
         margin-left: 13%;
         margin-right: 4vh;
         margin-top: 4vh;
-        min-width: 50%;
-        width: 75%;
-        height: 115px;
+        width: 60%;
+        height: 80px;
         border-radius: 30px;
     }
     .conteinerClima{
