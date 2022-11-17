@@ -279,34 +279,32 @@ iframe{
 @media screen and (max-width: 395px) {
     .bg{
         position: relative;
-        /*Alterar para deixar responsivo*/width: 100px;
+        /*Alterar para deixar responsivo*/width: 360px;
         /*Alterar para deixar responsivo*/height: 180px;
-        margin-left: 1vh;
+        margin-left: 2vh;
         margin-top: 3vh;
         margin-right: 1vh;
         background-color: rgb(7, 216, 0);
         border-radius: 30px;
-        width: 318px;
-    
     }
     .conteiner{
         /*Alterar para deixar responsivo*/top: 2.5vh;
-        /*Alterar para deixar responsivo*/left: 22px;
+        /*Alterar para deixar responsivo*/left: 35px;
         position: absolute;
     }
     .conteiner2 {
         /*Alterar para deixar responsivo*/top: 2.5vh;
-        /*Alterar para deixar responsivo*/left: 175px;
+        /*Alterar para deixar responsivo*/left: 200px;
         position: absolute;
     }
     .conteiner3 {
         /*Alterar para deixar responsivo*/top: 12vh;
-        /*Alterar para deixar responsivo*/left: 22px;
+        /*Alterar para deixar responsivo*/left: 35px;
         position: absolute;
     }
     .conteiner4 {
         /*Alterar para deixar responsivo*/top: 12vh;
-        /*Alterar para deixar responsivo*/left: 175px;
+        /*Alterar para deixar responsivo*/left: 200px;
         position: absolute;
 
     }
@@ -330,7 +328,7 @@ iframe{
     }
     .widget .bottom{
         /*Alterar para deixar responsivo*/bottom: -5px;
-        /*Alterar para deixar responsivo*/margin-left: 70px;
+        /*Alterar para deixar responsivo*/margin-left: 78px;
         position: absolute;
     }
     .solo-icon {
@@ -352,23 +350,25 @@ iframe{
         cursor: default;
         color: #fff;
     }
+
     /* Responsividade Climaticos */
+
     .bg2{
         background-color: rgb(7, 216, 0);
         position: relative;
-        margin-left: 13%;
-        margin-right: 4vh;
+        /*Alterar para deixar responsivo*/ margin-left: 11%;
+        margin-left: 2vh;
         margin-top: 4vh;
-        width: 60%;
-        height: 80px;
+        /*Alterar para deixar responsivo*/ width: 360px;
+        /*Alterar para deixar responsivo*/ height: 80px;
         border-radius: 30px;
     }
     .conteinerClima{
         position: absolute;
         display: inline-block;
         background-color: rgba(299, 299, 299, 0.4);
-        margin-left: 235px;
-        margin-top: 10px;
+        /*Alterar para deixar responsivo*/ margin-left: 15px;
+        /*Alterar para deixar responsivo*/ margin-top: 14px;
         border-radius: 20px;
         transition: all 0.3s ease;
         cursor: default;
@@ -377,21 +377,24 @@ iframe{
         background-color: rgba(299, 299, 299, 0.4);
         position: absolute;
         display: inline-block;
-        margin-left: 785px;
-        margin-top: 10px;
+        /*Alterar para deixar responsivo*/ margin-left: 190px;
+        /*Alterar para deixar responsivo*/margin-top: 14px;
         border-radius: 20px;
         transition: all 0.3s ease;
         cursor: default;
     }
     .widgetClima{
         position: relative;
-        width: 350px;
-        height: 95px;
+        /*Alterar para deixar responsivo*/ width: 160px;
+        /*Alterar para deixar responsivo*/ height: 50px;
     }
     .leftClima{
         position: absolute;
         margin-left: 5%;
         margin-top: 6%;
+    }
+    .leftClima h3{
+        /*Alterar para deixar responsivo*/ font-size: 0.8em;
     }
     .rightClima{
         position: absolute;
@@ -406,7 +409,7 @@ iframe{
      span{
         margin-top: 10%;
         margin-left: 5%;
-        font-size: 1.8em;
+       /*Alterar para deixar responsivo*/ font-size: 1em;
      }
     .conteinerClima:hover {
         box-shadow: -1px 1px 30px -10px #000000;

@@ -1,2 +1,5 @@
-const btn = document.querySelector(".motion")
+
+setTimeout(() => {
+    location.reload()
+}, 30000);
 console.log("teste");

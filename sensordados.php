@@ -5,6 +5,7 @@
 	<title>Informações detalhadas</title>
 	<link rel="stylesheet" href="css/stylepage2.css">
 	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+	<script src="js/scripts.js" defer></script>
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<!--Configuração do media query -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -42,10 +43,6 @@
 		$dumidade = $linha['umidade'];
 	}
 	?>
-	<script src="js/scripts.js" defer></script>
-	<script>
-
-	</script>
 	<div class="bg">
 		<!--Inicio do Painel 1-->
 		<div class="conteiner">
@@ -238,8 +235,6 @@
 			</table>
 		</div>
 	</center>
-
-
 </body>
 
 </html>
