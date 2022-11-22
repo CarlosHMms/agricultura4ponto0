@@ -10,46 +10,24 @@ body{
     min-height: 100vh;
     font-family: "Montserrat", sans-serif;
 }
-.navbar {
-    box-sizing: border-box;
+   
+header {
+    width: 100%;
     margin: 0;
     padding: 0;
-    background-color: #04AA6D;
-}
-
-.navp {
-    margin-top: 4%;
-    margin-left: auto;
-}
-
-.navLi {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    color: whitesmoke;
-    text-decoration: none;
-}
-
-.navA {
-    width: 40px;
-    height: 38px;
-}
-
-header {
+    background-color: rgb(7, 216, 0);
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    padding: 20px 20%;
 }
 
 .logo {
     cursor: pointer;
-    margin-left: 2%;
+    margin: 1%;
     width: 40%;
     height: 40%;
-    margin-bottom: 10px;
+    margin-bottom: 4vh;
 }
-
 .navUnlist {
     list-style: none;
 
@@ -57,7 +35,7 @@ header {
 
 .navUnlist li {
     display: inline-block;
-    padding: 0px 20px;
+    padding: 0px 15px;
 
 }
 
@@ -72,12 +50,6 @@ header {
 
 /*Fim Navbar*/
 
-#backgrd{
-    background-color: blue;
-    background-image: none;
-
-}
-
 .tabela {
     display: inline-block;
     padding: 30px 15px 20px 15px;
@@ -87,6 +59,7 @@ header {
     text-align: center;
     font-family: "Montserrat", sans-serif;
     border-collapse: collapse;
+    border-radius: 10px;
 }
 
 .tabela td,
@@ -102,119 +75,480 @@ header {
 .tabela td:hover {
     background-color: #ddd;
     transition: all 0.3s ease;
+    
 }
-
 .tabela th {
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: left;
-    background-color: #04AA6D;
+    background-color: rgb(7, 216, 0);
     color: white;
 }
 
-.ul-painel{
-    list-style:none ;
-}
 
-/* Painel 1 */
+
+/* Painel sensor 1 */
 
 .bg{
-    margin-top: 4%;
-    background-color: rgb(109, 165, 201);
-    width: 100%;
-    height: 450px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 2vh;
+    margin-top: 3vh;
+    margin-right: 2vh;
+    background-color: rgb(7, 216, 0);
+    height: 270px;
+    border-radius: 30px;
+
 }
 .conteiner{
-    top: 35%;
-    left: 2%;
+    top: 6.5vh;
+    left: 15px;
     position: absolute;
-    display: flex;
+    display: inline-block;
+}
+.conteiner2 {
+    top: 6.5vh;
+    left: 51.5vh;
+    position: absolute;
+    display: inline-block;
+}
+.conteiner3 {
+    top: 6.5vh;
+    left: 103vh;
+    position: absolute;
+    display: inline-block;
+}
+.conteiner4 {
+    top: 6.5vh;
+    left: 154.5vh;
+    position: absolute;
+    display: inline-block;
 }
 .widget{
-    width: 400px;
-    height: 300px;
+    width: 350px;
+    height: 150px;
     border-radius: 20px;
     background: rgba(299, 299, 299, 0.4);
+    transition: all 0.3s ease;
 }
-
+.widget:hover{
+    box-shadow: -1px 1px 30px -10px #000000;
+    transition: all 0.3 ease;
+}
 .widget .left{
+    top: 10px;
     position: absolute;
     left: 0;
     width: 200px;
 }
 .widget .right {
-    position: absolute;
-    right: 10px;
+    top: 10px;
+    position: relative;
+    left: 200px;
     width: 200px;
 }
-.temp-icon{
-    width: 35%;
-    margin-bottom: 0;
-    display: block;
-    margin-left: auto;
-    margin-right: 34%;
+.widget .bottom{
+    bottom: 10px;
+    margin-left: 63%;
+    position: absolute;
 }
-.temp-status{
-    color: #fff;
-    text-align: center;
-    margin-top: 10px;
-    font-size: 2em;   
-}
-.umi-icon {
-    width: 30%;
+.solo-icon {
+    width: 50%;
     margin-bottom: 0;
-    display: block;
-    margin-left: auto;
+    position: absolute;
     margin-right: auto;
+    transition: all 0.3s ease;
 }
-
-.umi-status {
-    color: #fff;
-    text-align: center;
-    margin-top: 10px;
-    font-size: 2em;
+.widget:hover .solo-icon{
+    margin-top: -5px;
 }
 .titulot{
-    margin-top: 25px;
+    margin-top: 4vh;
     text-align: center;
-    transition: 0.3s;
+    font-size: 1.8em;
+    cursor: default;
+    color: rgb(49, 49, 49);
 }
-.titulou{
-    margin-top: 25px;
-    text-align: center;
-}
-.widget .bottom{
-    width: 100%;
-    position: absolute;
-    bottom: 10px;
-
-}
-.widget .bottom div{
-    margin: 5px 10px 5px;
-    text-align: center;
-    line-height: 100%;
+.widget .bottom div h5 {
     font-size: 2em;
-}
-.bottom div span {
-    display: block;
+    cursor: default;
     color: #fff;
 }
-/*titulo painel 1*/
-.conteiner1 {
-    top: 25%;
-    left: 3%;
+
+/*Fim Painel Sensor 2*/
+
+/*Painel Clima*/
+.bg2{
+    background-color: rgb(7, 216, 0);
+    position: relative;
+    /*Alterar para deixar responsivo*/ margin-left: 10vh;
+    margin-top: 4vh;
+    /*Alterar para deixar responsivo*/ width: 1200px;
+    /*Alterar para deixar responsivo*/ height: 100px;
+    border-radius: 30px;
+}
+.conteinerClima{
     position: absolute;
-}
-.widgetsens {
-    width: 360px;
-    height: 50px;
+    display: inline-block;
+    background-color: rgba(299, 299, 299, 0.4);
+    margin-left: 235px;
+    margin-top: 10px;
     border-radius: 20px;
-    background: rgba(299, 299, 299, 0.4);
+    transition: all 0.3s ease;
+    cursor: default;
 }
-.top{
-    text-align: center;
+.conteinerUmi{
+    background-color: rgba(299, 299, 299, 0.4);
+    position: absolute;
+    display: inline-block;
+    margin-left: 785px;
+    margin-top: 10px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    cursor: default;
+}
+.widgetClima{
+    position: relative;
+    width: 350px;
+    height: 95px;
+}
+.leftClima{
+    position: absolute;
+    margin-left: 5%;
+    margin-top: 6%;
+}
+.rightClima{
+    position: absolute;
+    left: 58%;
+    margin-top: 4%;
+}
+.logoClima{
+    margin-bottom: 3%;
+    width: 30%;
+    height: 30%;
+}
+ span{
+    margin-top: 10%;
+    margin-left: 5%;
+    font-size: 1.8em;
+ }
+.conteinerClima:hover {
+    box-shadow: -1px 1px 30px -10px #000000;
+    transition: all 0.3 ease;
+}
+.conteinerUmi:hover {
+    box-shadow: -1px 1px 30px -10px #000000;
+    transition: all 0.3 ease;
+}
+/*Gráficos*/
+
+iframe{
+    display: inline-block;
+    width: 200vh;
+    height: 705px;
+    padding-top: 40px;
+    margin-left: -2.5%;
+}
+
+/* Responsividade */
+
+
+@media  screen and (max-width: 1325px) {
+    .bg{
+        position: relative;
+        /*Alterar para deixar responsivo*/width: 1200px;
+        /*Alterar para deixar responsivo*/height: 130px;
+        margin-left: 10vh;
+        margin-top: 3vh;
+        margin-right: 1vh;
+        background-color: rgb(7, 216, 0);
+        border-radius: 30px;
+    }
+    .conteiner{
+        /*Alterar para deixar responsivo*/top: 3.5vh;
+        /*Alterar para deixar responsivo*/left: 140px;
+        position: absolute;
+    }
+    .conteiner2 {
+        /*Alterar para deixar responsivo*/top: 3.5vh;
+        /*Alterar para deixar responsivo*/left: 390px;
+        position: absolute;
+    }
+    .conteiner3 {
+        /*Alterar para deixar responsivo*/top: 3.5vh;
+        /*Alterar para deixar responsivo*/left: 640px;
+        position: absolute;
+    }
+    .conteiner4 {
+        /*Alterar para deixar responsivo*/top: 3.5vh;
+        /*Alterar para deixar responsivo*/left: 890px;
+        position: absolute;
+
+    }
+    .widget{
+        /*Alterar para deixar responsivo*/width: 165px;
+        /*Alterar para deixar responsivo*/height: 80px;
+        border-radius: 10px;
+        background: rgba(299, 299, 299, 0.4);
+        transition: all 0.3s ease;
+    }
+    .widget .left{
+        /*Alterar para deixar responsivo*/top: 10px;
+        position: absolute;
+        /*Alterar para deixar responsivo*/width: 80px;
+    }
+    .widget .right {
+       /*Alterar para deixar responsivo*/top: 4px;
+        position: relative;
+        /*Alterar para deixar responsivo*/left: 100px;
+        /*Alterar para deixar responsivo*/width: 200px;
+    }
+    .widget .bottom{
+        /*Alterar para deixar responsivo*/bottom: -8px;
+        /*Alterar para deixar responsivo*/margin-left: 110px;
+        position: absolute;
+    }
+    .solo-icon {
+        /*Alterar para deixar responsivo*/width: 28%;
+        margin-bottom: 0;
+        position: absolute;
+        margin-left: auto;
+        transition: all 0.3s ease;
+    }
+    .titulot{
+        margin-top: 1vh;
+        text-align: center;
+        /*Alterar para deixar responsivo*/font-size: 1.2em;
+        cursor: default;
+        color: rgb(49, 49, 49);
+    }
+    .widget .bottom div h5 {
+        /*Alterar para deixar responsivo*/font-size: 1.3em;
+        cursor: default;
+        color: #fff;
+    }
+
+    /* Responsividade Climaticos */
+
+    .bg2{
+        background-color: rgb(7, 216, 0);
+        position: relative;
+        /*Alterar para deixar responsivo*/ margin-left: 10vh;
+        margin-top: 4vh;
+        /*Alterar para deixar responsivo*/ width: 1200px;
+        /*Alterar para deixar responsivo*/ height: 100px;
+        border-radius: 30px;
+    }
+    .conteinerClima{
+        position: absolute;
+        display: inline-block;
+        background-color: rgba(299, 299, 299, 0.4);
+        /*Alterar para deixar responsivo*/ margin-left: 380px;
+        /*Alterar para deixar responsivo*/ margin-top: 2.8vh;
+        border-radius: 15px;
+        transition: all 0.3s ease;
+        cursor: default;
+    }
+    .conteinerUmi{
+        background-color: rgba(299, 299, 299, 0.4);
+        position: absolute;
+        display: inline-block;
+        /*Alterar para deixar responsivo*/ margin-left: 630px;
+        /*Alterar para deixar responsivo*/margin-top: 2.8vh;
+        border-radius: 15px;
+        transition: all 0.3s ease;
+        cursor: default;
+    }
+    .widgetClima{
+        position: relative;
+        /*Alterar para deixar responsivo*/ width: 200px;
+        /*Alterar para deixar responsivo*/ height: 65px;
+    }
+    .leftClima{
+        position: absolute;
+        margin-left: 5%;
+        margin-top: 8%;
+    }
+    .leftClima h3{
+        /*Alterar para deixar responsivo*/ font-size: 1em;
+    }
+    .rightClima{
+        position: absolute;
+        left: 58%;
+        margin-top: 7%;
+    }
+    .logoClima{
+        margin-bottom: 3%;
+        width: 33%;
+        height: 30%;
+    }
+     span{
+        margin-top: 10%;
+        margin-left: 5%;
+       /*Alterar para deixar responsivo*/ font-size: 1.1em;
+     }
+    .conteinerClima:hover {
+        box-shadow: -1px 1px 30px -10px #000000;
+        transition: all 0.3 ease;
+    }
+    .conteinerUmi:hover {
+        box-shadow: -1px 1px 30px -10px #000000;
+        transition: all 0.3 ease;
+    }
+
+    /*Responsividade Iframe*/
+    iframe{
+    display: inline-block;
+    width: 215vh;
+    height: 705px;
+    padding-top: 40px;
+    margin-left: -8%;
 }
 
 
-/* Painel 2*/
-
+        @media screen and (max-width: 395px) {
+            .bg{
+                position: relative;
+                /*Alterar para deixar responsivo*/width: 360px;
+                /*Alterar para deixar responsivo*/height: 180px;
+                margin-left: 2vh;
+                margin-top: 3vh;
+                margin-right: 1vh;
+                background-color: rgb(7, 216, 0);
+                border-radius: 30px;
+            }
+            .conteiner{
+                /*Alterar para deixar responsivo*/top: 2.5vh;
+                /*Alterar para deixar responsivo*/left: 35px;
+                position: absolute;
+            }
+            .conteiner2 {
+                /*Alterar para deixar responsivo*/top: 2.5vh;
+                /*Alterar para deixar responsivo*/left: 200px;
+                position: absolute;
+            }
+            .conteiner3 {
+                /*Alterar para deixar responsivo*/top: 12vh;
+                /*Alterar para deixar responsivo*/left: 35px;
+                position: absolute;
+            }
+            .conteiner4 {
+                /*Alterar para deixar responsivo*/top: 12vh;
+                /*Alterar para deixar responsivo*/left: 200px;
+                position: absolute;
+        
+            }
+            .widget{
+                /*Alterar para deixar responsivo*/width: 120px;
+                /*Alterar para deixar responsivo*/height: 60px;
+                border-radius: 10px;
+                background: rgba(299, 299, 299, 0.4);
+                transition: all 0.3s ease;
+            }
+            .widget .left{
+                /*Alterar para deixar responsivo*/top: 10px;
+                position: absolute;
+                /*Alterar para deixar responsivo*/width: 80px;
+            }
+            .widget .right {
+               /*Alterar para deixar responsivo*/top: 4px;
+                position: relative;
+                left: 70px;
+                /*Alterar para deixar responsivo*/width: 200px;
+            }
+            .widget .bottom{
+                /*Alterar para deixar responsivo*/bottom: -5px;
+                /*Alterar para deixar responsivo*/margin-left: 78px;
+                position: absolute;
+            }
+            .solo-icon {
+                /*Alterar para deixar responsivo*/width: 20%;
+                margin-bottom: 0;
+                position: absolute;
+                margin-left: auto;
+                transition: all 0.3s ease;
+            }
+            .titulot{
+                margin-top: 1vh;
+                text-align: center;
+                /*Alterar para deixar responsivo*/font-size: .8em;
+                cursor: default;
+                color: rgb(49, 49, 49);
+            }
+            .widget .bottom div h5 {
+                /*Alterar para deixar responsivo*/font-size: .9em;
+                cursor: default;
+                color: #fff;
+            }
+        
+            /* Responsividade Climaticos */
+        
+            .bg2{
+                background-color: rgb(7, 216, 0);
+                position: relative;
+                /*Alterar para deixar responsivo*/ margin-left: 11%;
+                margin-left: 2vh;
+                margin-top: 4vh;
+                /*Alterar para deixar responsivo*/ width: 360px;
+                /*Alterar para deixar responsivo*/ height: 80px;
+                border-radius: 30px;
+            }
+            .conteinerClima{
+                position: absolute;
+                display: inline-block;
+                background-color: rgba(299, 299, 299, 0.4);
+                /*Alterar para deixar responsivo*/ margin-left: 15px;
+                /*Alterar para deixar responsivo*/ margin-top: 14px;
+                border-radius: 20px;
+                transition: all 0.3s ease;
+                cursor: default;
+            }
+            .conteinerUmi{
+                background-color: rgba(299, 299, 299, 0.4);
+                position: absolute;
+                display: inline-block;
+                /*Alterar para deixar responsivo*/ margin-left: 190px;
+                /*Alterar para deixar responsivo*/margin-top: 14px;
+                border-radius: 20px;
+                transition: all 0.3s ease;
+                cursor: default;
+            }
+            .widgetClima{
+                position: relative;
+                /*Alterar para deixar responsivo*/ width: 160px;
+                /*Alterar para deixar responsivo*/ height: 50px;
+            }
+            .leftClima{
+                position: absolute;
+                margin-left: 5%;
+                margin-top: 6%;
+            }
+            .leftClima h3{
+                /*Alterar para deixar responsivo*/ font-size: 0.8em;
+            }
+            .rightClima{
+                position: absolute;
+                left: 58%;
+                margin-top: 4%;
+            }
+            .logoClima{
+                margin-bottom: 3%;
+                width: 30%;
+                height: 30%;
+            }
+             span{
+                margin-top: 10%;
+                margin-left: 5%;
+               /*Alterar para deixar responsivo*/ font-size: 1em;
+             }
+            .conteinerClima:hover {
+                box-shadow: -1px 1px 30px -10px #000000;
+                transition: all 0.3 ease;
+            }
+            .conteinerUmi:hover {
+                box-shadow: -1px 1px 30px -10px #000000;
+                transition: all 0.3 ease;
+            }
+            }
+}

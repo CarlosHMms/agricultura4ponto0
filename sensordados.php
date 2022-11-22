@@ -5,20 +5,16 @@
 	<title>Informações detalhadas</title>
 	<link rel="stylesheet" href="css/stylepage2.css">
 	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+	<script src="js/scripts.js" defer></script>
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<!--Configuração do media query -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- CSS Bootstrap -->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous"> <!-- JavaScript Bundle with Popper -->
 </head>
 
 <header class="navbar">
 	<a class="logolink" href="index.php"><img class="logo" src="imagens/logotipo2.png" alt="Instituto Ferderal Goiano - Campus Ceres"></a>
-	<nav class="navp">
-		<ul class="navUnlist">
-			<li class="navLi"><a href="#"><img class="navA" src="imagens/facelogo.png"></a></li>
-			<li class="navLi"><a href="#"><img class="navA" src="imagens/instalogo.png"></a></li>
-			<li class="navLi"><a href="#"><img class="navA" src="imagens/zaplogo.png"></a></li>
-			<li class="navLi"><a href="#"><img class="navA" src="imagens/ttlogo.png"></a></li>
-		</ul>
-	</nav>
 </header>
 
 <body>
@@ -47,88 +43,111 @@
 		$dumidade = $linha['umidade'];
 	}
 	?>
-	<!--Inicio do Painel -->
-	<div class="bg"></div>
-	<div class="conteiner1">
-		<div class="widgetsens">
-			<div class="top">
-				<h3>Sensor 1</h3>
+	<div class="bg">
+		<!--Inicio do Painel 1-->
+		<div class="conteiner">
+			<div class="widget">
+				<div class="left">
+					<h3 class="titulot">Sensor 1</h3>
+				</div>
+				<div class="right">
+					<img class="solo-icon" src="imagens/senssolo.png" alt="">
+				</div>
+				<div class="bottom">
+					<div class="motion">
+						<h5><?php echo $dsensor1 ?></h5>
+					</div>
+				</div>
 			</div>
 		</div>
+		<!--Final do Painel 2-->
+		<!--Inicio Painel 2-->
+		<div class="conteiner2">
+			<div class="widget">
+				<div class="left">
+					<h3 class="titulot">Sensor 2</h3>
+				</div>
+				<div class="right">
+					<img class="solo-icon" src="imagens/senssolo.png" alt="">
+				</div>
+				<div class="bottom">
+					<div class="motion">
+						<h5><?php echo $dsensor2 ?></h5>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--Final do Painel 2-->
+		<!--Inicio Painel 3-->
+		<div class="conteiner3">
+			<div class="widget">
+				<div class="left">
+					<h3 class="titulot">Sensor 3</h3>
+				</div>
+				<div class="right">
+					<img class="solo-icon" src="imagens/senssolo.png" alt="">
+				</div>
+				<div class="bottom">
+					<div class="motion">
+						<h5><?php echo $dsensor3 ?></h5>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--Final do Painel 3-->
+		<!--Inicio Painel 4-->
+		<div class="conteiner4">
+			<div class="widget">
+				<div class="left">
+					<h3 class="titulot">Sensor 4</h3>
+				</div>
+				<div class="right">
+					<img class="solo-icon" src="imagens/senssolo.png" alt="">
+				</div>
+				<div class="bottom">
+					<div class="motion">
+						<h5 style="color: white;"><?php echo $dsensor4 ?></h5>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--Final do Painel 4-->
 	</div>
-	<div class="conteiner">
-		<div class="widget">
-			<div class="left">
-				<h3 class="titulot">Temperatura</h3>
-				<img class="temp-icon" src="imagens/term.png" alt="">
-				<h5 class="temp-status"><?php echo $dtemperatura ?> C°</h5>
+	<!--Painel Climatico Temperatura -->
+
+	<div class="bg2">
+		<div class="conteinerClima">
+			<div class="widgetClima">
+				<div class="leftClima">
+					<h3>Temperatura: </h3>
+				</div>
+				<div class="rightClima">
+					<img class="logoClima" src="imagens/term.png" alt="">
+					<span style="color: white;"><?php echo $dtemperatura ?> C°</span>
+				</div>
 			</div>
-			<div class="right">
-				<h3 class="titulou">Umidade do ar</h3>
-				<img class="umi-icon" src="imagens/umi.png" alt="">
-				<h5 class="umi-status"><?php echo $dumidade ?> %</h5>
-			</div>
-			<div class="bottom">
-				<div>
-					<h5 style="font-size: 0.83em;">Umidade do solo</h5><span><?php echo $dsensor1 ?></span>
+		</div>
+
+		<!--Fim do Painel Climatico-->
+		<!--Painel Climatico Temperatura -->
+
+		<div class="conteinerUmi">
+			<div class="widgetClima">
+				<div class="leftClima">
+					<h3>Umidade:</h3>
+				</div>
+				<div class="rightClima">
+					<img class="logoClima" src="imagens/umi.png" alt="">
+					<span style="color: white;"><?php echo $dumidade ?>%</span>
 				</div>
 			</div>
 		</div>
 	</div>
 
-	<!--Final do Painel -->
+	<!--Fim do Painel Climatico-->
 
-	<script type="text/javascript">
-		google.charts.load('current', {
-			'packages': ['corechart']
-		});
-		google.charts.setOnLoadCallback(drawChart);
+	<iframe src="testeisset.php" frameborder="0"></iframe>
 
-		function drawChart() {
-			var data = google.visualization.arrayToDataTable([
-				['Ano', 'Sensor 1', 'Sensor 2', 'Sensor 3', 'Sensor 4'],
-				<?php
-
-				$dsql = 'SELECT s.sensor1, s.sensor2, s.sensor3, s.sensor4 FROM sensores s INNER JOIN central c  on s.central_id = c.id_central where c.id_central =' . $sensor . ';';
-
-				$resultado = mysqli_query($conn, $dsql);
-				while ($linha = mysqli_fetch_array($resultado)) {
-					$dsensor1 = $linha['sensor1'];
-					$dsensor2 = $linha['sensor2'];
-					$dsensor3 = $linha['sensor3'];
-					$dsensor4 = $linha['sensor4'];
-
-
-				?>
-
-					['20/04', <?php echo $dsensor1;  ?>, <?php echo $dsensor2;  ?>, <?php echo $dsensor3;  ?>, <?php echo $dsensor4;  ?>],
-
-				<?php } ?>
-
-			]);
-
-
-
-
-
-			var options = {
-				title: 'Grafico de Sensores',
-				curveType: 'function',
-				legend: {
-					position: 'bottom'
-				}
-			};
-
-			var chart = new google.visualization.LineChart(document.getElementById('graficosensor'));
-
-			chart.draw(data, options);
-		}
-	</script>
-
-	<br><br>
-	<!--Grafíco 1 -->
-	<div id="graficosensor" style="width: 900px; height: 500px"></div>
-	<!--Grafíco 1 -->
 	<center>
 		<div>
 			<table border="0" class="tabela">
@@ -216,8 +235,6 @@
 			</table>
 		</div>
 	</center>
-
-
 </body>
 
 </html>
