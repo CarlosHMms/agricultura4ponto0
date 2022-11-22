@@ -89,7 +89,7 @@ input[type="submit"]:hover{
 }
 
 /*Responsividade 1325 Viewport*/
-@media screen and (min-width: 1325px){
+@media screen and (max-width: 1325px){
     body{
     overflow: hidden;
     font-family: "Montserrat", sans-serif;
