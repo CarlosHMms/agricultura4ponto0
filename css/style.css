@@ -32,11 +32,10 @@ header {
 
 .logo {
     cursor: pointer;
-    margin-left: 2%;
+    margin: 1%;
     width: 40%;
     height: 40%;
-    margin-bottom: 4.8vh;
-    margin-top: 8px;
+    margin-bottom: 4vh;
 }
 
 .navUnlist {
