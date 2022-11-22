@@ -145,15 +145,15 @@
 	</div>
 
 	<!--Fim do Painel Climatico-->
-
-	<iframe src="testeisset.php" frameborder="0"></iframe>
-
-	<center>
-		<div>
+	<div class="frame">
+		<iframe src="testeisset.php" frameborder="0"></iframe>
+	</div>
+	
+		<div class="divTable">
 			<table border="0" class="tabela">
 				<tr>
 					<th colspan="15">
-						<center><?php echo $nome;  ?></center>
+						<?php echo $nome;  ?>
 					</th>
 				</tr>
 
@@ -234,7 +234,6 @@
 					</tr>
 			</table>
 		</div>
-	</center>
 </body>
 
 </html>

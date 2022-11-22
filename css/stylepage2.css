@@ -7,12 +7,11 @@ body{
     padding: 0;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
     font-family: "Montserrat", sans-serif;
 }
    
 header {
-    width: 100%;
+    width: 1869.4px;
     margin: 0;
     padding: 0;
     background-color: rgb(7, 216, 0);
@@ -51,10 +50,9 @@ header {
 /*Fim Navbar*/
 
 .tabela {
-    display: inline-block;
     padding: 30px 15px 20px 15px;
-    margin-right: 0vw;
-    margin-left: auto;
+    margin-left: 380px;
+    margin-bottom: 20px;
     color: gray;
     text-align: center;
     font-family: "Montserrat", sans-serif;
@@ -80,7 +78,6 @@ header {
 .tabela th {
     padding-top: 12px;
     padding-bottom: 12px;
-    text-align: left;
     background-color: rgb(7, 216, 0);
     color: white;
 }
@@ -245,7 +242,7 @@ header {
 
 iframe{
     display: inline-block;
-    width: 200vh;
+    width: 199vh;
     height: 705px;
     padding-top: 40px;
     margin-left: -2.5%;
@@ -406,8 +403,10 @@ iframe{
     margin-left: -8%;
 }
 
-
         @media screen and (max-width: 401px) {
+            header {
+                width: 400px;
+            }
             .bg{
                 position: relative;
                 /*Alterar para deixar responsivo*/width: 360px;
@@ -549,6 +548,23 @@ iframe{
             .conteinerUmi:hover {
                 box-shadow: -1px 1px 30px -10px #000000;
                 transition: all 0.3 ease;
+            }
+            /*Responsividade IFRAME*/
+            .frame{
+                overflow-x: auto;
+                margin-left: -125px;
+                height: 750px;
+            }
+
+            /*Responsividade tabela*/
+            .tabela{
+                font-size: 0.8em;
+                text-align: center;
+                padding: 30px 15px 20px 15px;
+            }
+            div.divTable{
+                overflow-x: auto;
+                margin-left: -350px;
             }
             }
 }

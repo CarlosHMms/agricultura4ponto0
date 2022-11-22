@@ -89,7 +89,7 @@ input[type="submit"]:hover{
 }
 
 /*Responsividade 1325 Viewport*/
-@media screen and (max-width: 1325px){
+@media screen and (max-width: 402px){
     body{
     overflow: hidden;
     font-family: "Montserrat", sans-serif;
@@ -102,7 +102,7 @@ input[type="submit"]:hover{
     display: inline-block;
 }
 .englobe{
-    /*Alterar*/margin-left: 35%;
+    /*Alterar*/margin-left: 20%;
 }
 .switch{
     display: flex;
@@ -156,7 +156,7 @@ input[type="submit"]:hover{
     /*Alterar*/transform: translateX(21px);
 }
 .datas{
-    /*Alterar*/margin-left: 42%;
+    /*Alterar*/margin-left: 0%;
 }
 
 input[type="date"]{
