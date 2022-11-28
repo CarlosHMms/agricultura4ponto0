@@ -27,26 +27,6 @@ header {
     height: 40%;
     margin-bottom: 4vh;
 }
-.navUnlist {
-    list-style: none;
-
-}
-
-.navUnlist li {
-    display: inline-block;
-    padding: 0px 15px;
-
-}
-
-.navUnlist li a {
-    transition: all 0.3s ease;
-}
-
-.navUnlist li a :hover {
-    transition: all 0.5s ease;
-    border-radius: 18px;
-}
-
 /*Fim Navbar*/
 
 .tabela {
@@ -264,6 +244,13 @@ iframe{
     }
     header{
         width: 1320px;;
+    }
+    .logo {
+    cursor: pointer;
+    margin: 1%;
+    width: 30%;
+    height: 30%;
+    margin-bottom: 4vh;
     }
     .conteiner{
         /*Alterar para deixar responsivo*/top: 3.5vh;
