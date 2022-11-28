@@ -262,6 +262,9 @@ iframe{
         background-color: rgb(7, 216, 0);
         border-radius: 30px;
     }
+    header{
+        width: 1320px;;
+    }
     .conteiner{
         /*Alterar para deixar responsivo*/top: 3.5vh;
         /*Alterar para deixar responsivo*/left: 140px;
@@ -397,11 +400,20 @@ iframe{
     /*Responsividade Iframe*/
     iframe{
     display: inline-block;
-    width: 215vh;
+    width: 222vh;
     height: 705px;
     padding-top: 40px;
-    margin-left: -8%;
+    margin-left: -25vh;
+    }
+    .tabela {
+        font-size: 15px;
+        margin: 0;
+        margin-left: 16vh;
+        margin-bottom: 20px;
+    }
+
 }
+
 
         @media screen and (max-width: 401px) {
             header {
@@ -566,5 +578,4 @@ iframe{
                 overflow-x: auto;
                 margin-left: -350px;
             }
-            }
-}
+        }
