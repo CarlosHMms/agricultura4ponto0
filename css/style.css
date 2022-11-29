@@ -10,9 +10,14 @@ body {
     min-height: 100vh;
     font-family: "Montserrat", sans-serif;
 }
+<<<<<<< Updated upstream
 
 .navbar {
     box-sizing: border-box;
+=======
+header {
+    width: 1869.4px;
+>>>>>>> Stashed changes
     margin: 0;
     padding: 0;
     background-color: rgb(7, 216, 0);   
@@ -121,6 +126,7 @@ button[type=submit]:hover {
     transition: all 0.3s ease;
 }
 
+<<<<<<< Updated upstream
 #div_central {
     padding: 0;
     width: 1000px;
@@ -128,3 +134,62 @@ button[type=submit]:hover {
 
 }
 /*Fim da tabela
+=======
+@media screen and (max-width: 1326px){
+    header {
+    width: 1869.4px;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(7, 216, 0);
+    }
+    .logo {
+    cursor: pointer;
+    margin: 1%;
+    width: 30%;
+    height: 30%;
+    margin-bottom: 4vh;
+    }
+    .tabela{
+    margin-top: -25px;
+    font-size: 12px;
+    padding: 1.5%;
+    }
+    .tabela th {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    }
+    button[type=submit]{
+    margin: 5px 0;
+
+    }
+}
+@media screen and (max-width: 401px){
+    header {
+    width: 401px;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(7, 216, 0);
+    }
+    .logo {
+    cursor: pointer;
+    margin: 2%;
+    width: 40%;
+    height: 40%;
+    margin-bottom: 2vh;
+    }
+    .tabela{
+    margin-top: -25px;
+    font-size: 12px;
+    padding: 4%;
+    margin-left: 30px;
+    }
+    .tabela th {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    }
+    button[type=submit]{
+        margin: 5px 0;
+
+    }
+}  
+>>>>>>> Stashed changes
