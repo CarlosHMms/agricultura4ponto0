@@ -7,12 +7,11 @@ body{
     padding: 0;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
     font-family: "Montserrat", sans-serif;
 }
    
 header {
-    width: 100%;
+    width: 1869.4px;
     margin: 0;
     padding: 0;
     background-color: rgb(7, 216, 0);
@@ -28,33 +27,12 @@ header {
     height: 40%;
     margin-bottom: 4vh;
 }
-.navUnlist {
-    list-style: none;
-
-}
-
-.navUnlist li {
-    display: inline-block;
-    padding: 0px 15px;
-
-}
-
-.navUnlist li a {
-    transition: all 0.3s ease;
-}
-
-.navUnlist li a :hover {
-    transition: all 0.5s ease;
-    border-radius: 18px;
-}
-
 /*Fim Navbar*/
 
 .tabela {
-    display: inline-block;
     padding: 30px 15px 20px 15px;
-    margin-right: 0vw;
-    margin-left: auto;
+    margin-left: 380px;
+    margin-bottom: 20px;
     color: gray;
     text-align: center;
     font-family: "Montserrat", sans-serif;
@@ -80,7 +58,6 @@ header {
 .tabela th {
     padding-top: 12px;
     padding-bottom: 12px;
-    text-align: left;
     background-color: rgb(7, 216, 0);
     color: white;
 }
@@ -91,12 +68,11 @@ header {
 
 .bg{
     position: relative;
-    display: flex;
-    justify-content: space-between;
     margin-left: 2vh;
     margin-top: 3vh;
     margin-right: 2vh;
     background-color: rgb(7, 216, 0);
+    width: 1825px;
     height: 270px;
     border-radius: 30px;
 
@@ -182,18 +158,18 @@ header {
 .bg2{
     background-color: rgb(7, 216, 0);
     position: relative;
-    /*Alterar para deixar responsivo*/ margin-left: 10vh;
+    margin-left: 2vh;
     margin-top: 4vh;
-    /*Alterar para deixar responsivo*/ width: 1200px;
-    /*Alterar para deixar responsivo*/ height: 100px;
+    width: 1825px;
+    height: 150px;
     border-radius: 30px;
 }
 .conteinerClima{
     position: absolute;
     display: inline-block;
     background-color: rgba(299, 299, 299, 0.4);
-    margin-left: 235px;
-    margin-top: 10px;
+    margin-left: 480px;
+    margin-top: 25px;
     border-radius: 20px;
     transition: all 0.3s ease;
     cursor: default;
@@ -202,8 +178,9 @@ header {
     background-color: rgba(299, 299, 299, 0.4);
     position: absolute;
     display: inline-block;
-    margin-left: 785px;
-    margin-top: 10px;
+    right: 20px;
+    margin-right: 485px;
+    margin-top: 25px;
     border-radius: 20px;
     transition: all 0.3s ease;
     cursor: default;
@@ -245,7 +222,7 @@ header {
 
 iframe{
     display: inline-block;
-    width: 200vh;
+    width: 199vh;
     height: 705px;
     padding-top: 40px;
     margin-left: -2.5%;
@@ -264,6 +241,16 @@ iframe{
         margin-right: 1vh;
         background-color: rgb(7, 216, 0);
         border-radius: 30px;
+    }
+    header{
+        width: 1320px;;
+    }
+    .logo {
+    cursor: pointer;
+    margin: 1%;
+    width: 30%;
+    height: 30%;
+    margin-bottom: 4vh;
     }
     .conteiner{
         /*Alterar para deixar responsivo*/top: 3.5vh;
@@ -344,7 +331,7 @@ iframe{
         position: absolute;
         display: inline-block;
         background-color: rgba(299, 299, 299, 0.4);
-        /*Alterar para deixar responsivo*/ margin-left: 380px;
+        /*Alterar para deixar responsivo*/ margin-left: 373px;
         /*Alterar para deixar responsivo*/ margin-top: 2.8vh;
         border-radius: 15px;
         transition: all 0.3s ease;
@@ -354,7 +341,7 @@ iframe{
         background-color: rgba(299, 299, 299, 0.4);
         position: absolute;
         display: inline-block;
-        /*Alterar para deixar responsivo*/ margin-left: 630px;
+        /*Alterar para deixar responsivo*/ margin-right: 358px;
         /*Alterar para deixar responsivo*/margin-top: 2.8vh;
         border-radius: 15px;
         transition: all 0.3s ease;
@@ -400,14 +387,25 @@ iframe{
     /*Responsividade Iframe*/
     iframe{
     display: inline-block;
-    width: 215vh;
+    width: 222vh;
     height: 705px;
     padding-top: 40px;
-    margin-left: -8%;
+    margin-left: -25vh;
+    }
+    .tabela {
+        font-size: 15px;
+        margin: 0;
+        margin-left: 16vh;
+        margin-bottom: 20px;
+    }
+
 }
 
 
-        @media screen and (max-width: 395px) {
+        @media screen and (max-width: 401px) {
+            header {
+                width: 400px;
+            }
             .bg{
                 position: relative;
                 /*Alterar para deixar responsivo*/width: 360px;
@@ -508,7 +506,7 @@ iframe{
                 background-color: rgba(299, 299, 299, 0.4);
                 position: absolute;
                 display: inline-block;
-                /*Alterar para deixar responsivo*/ margin-left: 190px;
+                /*Alterar para deixar responsivo*/ margin-right: -5px;
                 /*Alterar para deixar responsivo*/margin-top: 14px;
                 border-radius: 20px;
                 transition: all 0.3s ease;
@@ -550,5 +548,21 @@ iframe{
                 box-shadow: -1px 1px 30px -10px #000000;
                 transition: all 0.3 ease;
             }
+            /*Responsividade IFRAME*/
+            .frame{
+                overflow-x: auto;
+                margin-left: -125px;
+                height: 750px;
             }
-}
+
+            /*Responsividade tabela*/
+            .tabela{
+                font-size: 0.8em;
+                text-align: center;
+                padding: 30px 15px 20px 15px;
+            }
+            div.divTable{
+                overflow-x: auto;
+                margin-left: -350px;
+            }
+        }

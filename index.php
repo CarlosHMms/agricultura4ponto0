@@ -35,7 +35,6 @@
 
     <br><br>
 
-    <div id="div_central">
 
         <?php
 
@@ -128,11 +127,13 @@
                 </tr>
             </table>
 
-        <?php
-        }  ?>
+        <?php }?>
 
+<div class="textoSobre">
+    <div class="conteudo">
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, possimus vitae pariatur incidunt molestiae, dolorem iusto unde, quam ducimus accusantium iste blanditiis officiis ad at voluptatem delectus expedita sed alias! Lorem ipsum, dolor sit amet consectetur adipi oditsa veniam porro. Eos ipsa officia natus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere laborum obcaecati, iusto ea vitae inventore vel excepturi, adipisci velit a dolorem perspiciatis, est at assumenda nobis nam quasi quo earum? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam dignissimos cumque officiis velit officia sapiente fuga praesentium autem distinctio nulla. Vero, libero sapiente debitis commodi perferendis error repellat qui repudiandae!</p>
     </div>
-    <br><br>
+</div>
 
 </body>
 

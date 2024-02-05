@@ -9,22 +9,14 @@ body {
     align-items: center;
     min-height: 100vh;
     font-family: "Montserrat", sans-serif;
-}
-
-.navbar {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    background-color: rgb(7, 216, 0);   
-    width: -40px;
-}
-
-.navA {
-    width: 40px;
-    height: 38px;
+    overflow-x: hidden;
 }
 
 header {
+    width: 1869.4px;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(7, 216, 0);
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -37,26 +29,6 @@ header {
     height: 40%;
     margin-bottom: 4vh;
 }
-
-.navUnlist {
-    list-style: none;
-
-}
-
-.navUnlist li {
-    display: inline-block;
-    padding: 0px 15px;
-
-}
-
-.navUnlist li a {
-    transition: all 0.3s ease;
-}
-
-.navUnlist li a :hover {
-    transition: all 0.5s ease;
-    border-radius: 18px;
-}
 /*Fim NavBar*/
 
 /* Tabela */
@@ -67,15 +39,14 @@ table, th, td {
 
 .tabela {
     display: inline-block;
-    padding: 4% 3% 4% 3%;
-    margin-right: 0vw;
+    padding: 2%;
     text-align: center;
     border-radius: 30px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 22px;
+    font-size: 23px;
     border-collapse: collapse;
-    border-color: rgb(7, 216, 0);
+    border-color: rgb(138, 138, 138);
     color: rgb(0, 0, 0);
+    margin-left: 100px;
 }
 
 .tabela td,
@@ -120,11 +91,46 @@ button[type=submit]:hover {
     border-radius: 20px;
     transition: all 0.3s ease;
 }
-
-#div_central {
-    padding: 0;
-    width: 1000px;
-    margin-left: 100px;
-
+.textoSobre{
+    float: right;
+    margin-right: 220px;
 }
-/*Fim da tabela
+.conteudo{
+    width: 347px;
+    height: 500px;
+    text-align: justify;
+}
+
+/*Fim da tabela*/
+
+@media screen and (max-width: 1325px){
+    header {
+    width: 1869.4px;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(7, 216, 0);
+    }
+    .logo {
+    cursor: pointer;
+    margin: 1%;
+    width: 30%;
+    height: 30%;
+    margin-bottom: 4vh;
+    }
+    .tabela{
+        margin-top: -25px;
+        font-size: 12px;
+        padding: 1.5%;
+    }
+    .tabela th {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    }
+    button[type=submit]{
+        margin: 5px 0;
+
+    }
+}
+@media screen and (max-width: 401px){
+    
+}
